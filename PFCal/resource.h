@@ -1,0 +1,120 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Visual C++ 生成的包含文件。
+// 供 PFCal.rc 使用
+//
+#define IDC_LINE_EXANGE                 3
+#define IDD_ABOUTBOX                    100
+#define IDP_OLE_INIT_FAILED             100
+#define IDB_WRITESMALL                  110
+#define IDB_WRITELARGE                  111
+#define IDB_MAIN                        112
+#define IDB_BUTTONS                     113
+#define IDB_FILELARGE                   114
+#define IDB_FILESMALL                   115
+#define IDR_POPUP_EDIT                  119
+#define ID_STATUSBAR_PANE1              120
+#define ID_STATUSBAR_PANE2              121
+#define IDS_STATUS_PANE1                122
+#define IDS_STATUS_PANE2                123
+#define IDR_MAINFRAME                   128
+#define IDR_MAINFRAME_256               129
+#define IDR_PFCalTYPE                   130
+#define ID_WINDOW_MANAGER               131
+#define ID_VIEW_OUTPUTWND               149
+#define ID_VIEW_PROPERTIESWND           150
+#define IDR_PASTE_MENU                  151
+#define ID_SORTPROPERTIES               151
+#define IDR_WINDOWS_MENU                152
+#define ID_PROPERTIES1                  152
+#define ID_PROPERTIES2                  153
+#define ID_EXPAND_ALL                   154
+#define IDS_OUTPUT_WND                  157
+#define IDS_PROPERTIES_WND              158
+#define IDI_OUTPUT_WND                  165
+#define IDI_OUTPUT_WND_HC               166
+#define IDI_PROPERTIES_WND              167
+#define IDI_PROPERTIES_WND_HC           168
+#define IDR_OUTPUT_POPUP                182
+#define IDR_PROPERTIES                  183
+#define IDB_PROPERTIES_HC               184
+#define IDS_BUILD_TAB                   300
+#define IDS_DEBUG_TAB                   301
+#define IDS_FIND_TAB                    302
+#define IDS_EDIT_MENU                   306
+#define IDR_RIBBON                      307
+#define IDR_BUS_MENU                    314
+#define IDR_LINE_MENU                   315
+#define IDR_EMPTY_MENU                  316
+#define IDD_PROPERTIES                  317
+#define IDD_TOOL_LINE                   321
+#define IDD_TOOL_BUS                    325
+#define IDD_OUTPUT                      327
+#define IDB_POWER2                      331
+#define IDD_DIALOG1                     332
+#define IDC_LINE_LINE                   1006
+#define IDC_LINE_TRANSFORMERS           1007
+#define IDC_LINE_L                      1008
+#define IDC_LINE_R1                     1009
+#define IDC_LINE_X1                     1010
+#define IDC_LINE_G1                     1011
+#define IDC_LINE_B1                     1012
+#define IDC_LINE_ID_TO                  1013
+#define IDC_LINE_ID_FROM                1014
+#define IDC_LINE_RATVOL                 1015
+#define IDC_LINE_ID                     1016
+#define IDC_TRANS_IO                    1017
+#define IDC_TRANS_UNH                   1018
+#define IDC_TRANS_UNL                   1019
+#define IDC_TRANS_PK                    1020
+#define IDC_TRANS_UK                    1021
+#define IDC_TRANS_PO                    1022
+#define IDC_TRANS_SN                    1023
+#define IDC_BUS_PQQ                     1024
+#define IDC_BUS_PQP                     1025
+#define IDC_BUS_VTF                     1026
+#define IDC_BUS_PVU                     1028
+#define IDC_BUS_PVP                     1029
+#define IDC_BUS_TYPE_VT                 1033
+#define IDC_BUS_TYPE_PQ                 1034
+#define IDC_BUS_TYPE_PV                 1035
+#define IDC_BUS_RATVOL                  1036
+#define IDC_BUS_VTE                     1037
+#define IDC_BUS_ID                      1038
+#define IDC_LIST_OUTPUT                 1045
+#define IDC_SLIDER_GRID                 1048
+#define ID_WRITE_PASTEASHYPERLINK       32770
+#define ID_TOOLS_LINE                   32771
+#define ID_TOOLS_VTHETA                 32775
+#define ID_TOOLS_PQ                     32776
+#define ID_BUTTON7                      32777
+#define ID_TOOLS_PV                     32777
+#define ID_TOOL_SELECT                  32778
+#define ID_BUS_COPY                     32779
+#define ID_BUS_REMOVE                   32780
+#define ID_BUS_REMOVE32781              32781
+#define ID_BUS_COPY32782                32782
+#define ID_BUS_PASTE                    32783
+#define ID_LINE_COPY                    32784
+#define ID_LINE_PASTE                   32785
+#define ID_LINE_REMOVE                  32786
+#define ID_BUS_REMOVE32787              32787
+#define ID_TOOL_REMOVE                  32788
+#define ID_TOOL_COPY                    32789
+#define ID_TOOL_PASTE                   32790
+#define ID_L                            32791
+#define ID_EDIT_Remove                  32792
+#define ID_PROPERTIES                   32793
+#define ID_RUN                          32794
+#define ID_BUTTON2                      32797
+#define ID_ABOUT                        32797
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        335
+#define _APS_NEXT_COMMAND_VALUE         32798
+#define _APS_NEXT_CONTROL_VALUE         1049
+#define _APS_NEXT_SYMED_VALUE           310
+#endif
+#endif
