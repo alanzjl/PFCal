@@ -1,0 +1,818 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#include ""res\\PFCal.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""      // Standard components\r\n"
+    "#if !defined(_AFXDLL)\r\n"
+    "#include ""afxprint.rc""        // printing/print preview resources\r\n"
+    "#include ""afxribbon.rc""        // MFC ribbon and control bar resources\r\n"
+    "#endif\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_POWER2              BITMAP                  "C:\\Users\\Alanzjl\\Desktop\\图片\\项目3.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_BUS_MENU MENU
+BEGIN
+    POPUP "bus"
+    BEGIN
+        MENUITEM "Copy",                        ID_TOOL_COPY
+        MENUITEM "Paste",                       ID_BUS_PASTE, INACTIVE
+        MENUITEM "Remove",                      ID_TOOL_REMOVE
+    END
+END
+
+IDR_LINE_MENU MENU
+BEGIN
+    POPUP "line"
+    BEGIN
+        MENUITEM "Copy",                        ID_LINE_COPY, INACTIVE
+        MENUITEM "Paste",                       ID_L, INACTIVE
+        MENUITEM "Remove",                      ID_TOOL_REMOVE
+    END
+END
+
+IDR_EMPTY_MENU MENU
+BEGIN
+    POPUP "empty"
+    BEGIN
+        MENUITEM "Copy",                        ID_BUS_COPY, INACTIVE
+        MENUITEM "Paste",                       ID_TOOL_PASTE
+        MENUITEM "Remove",                      ID_BUS_REMOVE32781, INACTIVE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PROPERTIES DIALOGEX 0, 0, 270, 179
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_TOOL_LINE DIALOGEX 0, 0, 443, 230
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,276,198,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,336,198,50,14
+    CONTROL         "Transmission Lines",IDC_LINE_LINE,"Button",BS_AUTORADIOBUTTON,144,24,76,10
+    CONTROL         "Transformers",IDC_LINE_TRANSFORMERS,"Button",BS_AUTORADIOBUTTON,270,24,59,10
+    GROUPBOX        "Type",IDC_STATIC,12,12,432,24
+    EDITTEXT        IDC_LINE_L,102,144,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LINE_R1,102,60,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LINE_X1,102,78,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LINE_G1,102,102,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LINE_B1,102,120,48,12,ES_AUTOHSCROLL
+    LTEXT           "KV",IDC_STATIC,146,195,54,12
+    LTEXT           "KW",IDC_STATIC,366,102,54,12
+    GROUPBOX        "Transformers",IDC_STATIC,210,42,176,141
+    LTEXT           "KV",IDC_STATIC,366,78,54,12
+    LTEXT           "KV",IDC_STATIC,366,60,54,12
+    LTEXT           "%",IDC_STATIC,366,162,54,12
+    LTEXT           "Line Length",IDC_STATIC,42,144,54,12
+    LTEXT           "G1 Conductance",IDC_STATIC,42,102,54,12
+    LTEXT           "X1 Impedance",IDC_STATIC,42,78,54,12
+    LTEXT           "Io - Open-circuited current",IDC_STATIC,220,162,90,12
+    LTEXT           "B1 Susceptance",IDC_STATIC,42,120,54,12
+    LTEXT           "To",IDC_STATIC,83,175,9,8
+    EDITTEXT        IDC_LINE_ID_TO,94,175,20,12,ES_AUTOHSCROLL
+    LTEXT           "From",IDC_STATIC,42,175,18,8
+    EDITTEXT        IDC_LINE_ID_FROM,60,175,20,12,ES_AUTOHSCROLL
+    LTEXT           "Rating Voltage",IDC_STATIC,42,196,47,8
+    EDITTEXT        IDC_LINE_RATVOL,95,195,48,12,ES_AUTOHSCROLL
+    LTEXT           "KW",IDC_STATIC,366,144,54,12
+    LTEXT           "Assigned ID",IDC_STATIC,42,24,39,8
+    EDITTEXT        IDC_LINE_ID,90,24,24,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "R1 Resistance",IDC_STATIC,42,60,54,12
+    LTEXT           "Pk - Short-circuited power",IDC_STATIC,220,102,90,12
+    LTEXT           "Un - Low voltage side",IDC_STATIC,220,78,90,12
+    LTEXT           "Un - High voltage side",IDC_STATIC,220,60,90,12
+    LTEXT           "Uk - Short-circuited voltage",IDC_STATIC,220,120,90,12
+    LTEXT           "Po - Open-circuited power",IDC_STATIC,220,144,90,12
+    EDITTEXT        IDC_TRANS_IO,312,162,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRANS_UNH,312,60,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRANS_UNL,312,78,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRANS_PK,312,102,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRANS_UK,312,120,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRANS_PO,312,144,48,12,ES_AUTOHSCROLL
+    LTEXT           "S/Km",IDC_STATIC,156,102,54,12
+    LTEXT           "Ω/Km",IDC_STATIC,156,78,54,12
+    LTEXT           "Ω/Km",IDC_STATIC,156,60,54,12
+    LTEXT           "S/Km",IDC_STATIC,156,120,54,12
+    LTEXT           "Km",IDC_STATIC,156,144,54,12
+    LTEXT           "%",IDC_STATIC,366,120,54,12
+    PUSHBUTTON      "Exange",IDC_LINE_EXANGE,123,174,54,14
+    GROUPBOX        "Transmission Lines",IDC_STATIC,18,42,176,120
+    EDITTEXT        IDC_TRANS_SN,312,42,48,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "MVA",IDC_STATIC,366,42,54,12
+END
+
+IDD_TOOL_BUS DIALOGEX 0, 0, 427, 140
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,264,114,50,14
+    PUSHBUTTON      "取消",IDCANCEL,330,114,50,14
+    GROUPBOX        "PQ Bus",IDC_STATIC,132,42,130,60
+    LTEXT           "Reactive Power Q",IDC_STATIC,142,78,60,11
+    LTEXT           "Active Power P",IDC_STATIC,142,60,60,11
+    EDITTEXT        IDC_BUS_PQQ,216,78,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BUS_PQP,210,60,30,12,ES_AUTOHSCROLL
+    LTEXT           "KW",IDC_STATIC,246,60,12,12
+    LTEXT           "+ j",IDC_STATIC,204,78,12,12
+    LTEXT           "KW",IDC_STATIC,246,78,12,12
+    GROUPBOX        "VΘ Bus",IDC_STATIC,24,42,92,60
+    LTEXT           "F",IDC_STATIC,32,75,34,11
+    LTEXT           "E",IDC_STATIC,32,57,28,11
+    EDITTEXT        IDC_BUS_VTF,62,75,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BUS_VTE,50,57,42,12,ES_AUTOHSCROLL
+    LTEXT           "KV",IDC_STATIC,98,57,12,12
+    LTEXT           "+ j",IDC_STATIC,50,75,12,12
+    LTEXT           "KV",IDC_STATIC,98,75,12,12
+    GROUPBOX        "PQ Bus",IDC_STATIC,276,42,130,60
+    LTEXT           "Vlotage U",IDC_STATIC,286,78,60,11
+    LTEXT           "Active Power P",IDC_STATIC,286,60,60,11
+    EDITTEXT        IDC_BUS_PVU,342,78,42,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BUS_PVP,342,60,42,12,ES_AUTOHSCROLL
+    LTEXT           "KW",IDC_STATIC,390,60,12,12
+    LTEXT           "KV",IDC_STATIC,390,78,12,12
+    CONTROL         "VΘ Bus",IDC_BUS_TYPE_VT,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,174,21,39,10
+    CONTROL         "PQ Bus",IDC_BUS_TYPE_PQ,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,240,21,39,10
+    CONTROL         "PV Bus",IDC_BUS_TYPE_PV,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,300,21,38,10
+    GROUPBOX        "Bus type",IDC_STATIC,24,12,384,24
+    LTEXT           "Rating voltage Un",IDC_STATIC,24,114,60,11
+    EDITTEXT        IDC_BUS_RATVOL,84,114,40,12,ES_AUTOHSCROLL
+    LTEXT           "KV",IDC_STATIC,132,114,12,12
+    LTEXT           "Assigned ID",IDC_STATIC,68,21,39,11
+    EDITTEXT        IDC_BUS_ID,110,21,21,12,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_OUTPUT DIALOGEX 0, 0, 475, 188
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,342,162,50,14
+    PUSHBUTTON      "取消",IDCANCEL,396,162,50,14
+    CONTROL         "",IDC_LIST_OUTPUT,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,27,24,420,126
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 294, 111
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,156,78,50,14
+    PUSHBUTTON      "取消",IDCANCEL,222,78,50,14
+    CONTROL         "",IDC_SLIDER_GRID,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,58,42,179,15
+    GROUPBOX        "Resolution",IDC_STATIC,27,18,240,54
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 172
+    END
+
+    IDD_TOOL_LINE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 436
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 223
+    END
+
+    IDD_TOOL_BUS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 420
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 133
+    END
+
+    IDD_OUTPUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 468
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 181
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_PROPERTIES AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_TOOL_LINE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_TOOL_BUS AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_OUTPUT AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG1 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\PFCal.ico"
+
+IDR_PFCalTYPE           ICON                    "res\\PFCalDoc.ico"
+
+IDI_OUTPUT_WND          ICON                    "res\\output_wnd.ico"
+
+IDI_OUTPUT_WND_HC       ICON                    "res\\output_wnd_hc.ico"
+
+IDI_PROPERTIES_WND      ICON                    "res\\properties_wnd.ico"
+
+IDI_PROPERTIES_WND_HC   ICON                    "res\\properties_wnd_hc.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+IDR_MAINFRAME_256       BITMAP                  "res\\Toolbar256.bmp"
+
+IDB_MAIN                BITMAP                  "res\\main.bmp"
+
+IDB_FILELARGE           BITMAP                  "res\\filelarge.bmp"
+
+IDB_FILESMALL           BITMAP                  "res\\filesmall.bmp"
+
+IDB_WRITELARGE          BITMAP                  "res\\writelarge.bmp"
+
+IDB_WRITESMALL          BITMAP                  "res\\writesmall.bmp"
+
+IDB_BUTTONS             BITMAP                  "res\\buttons.bmp"
+
+IDR_PROPERTIES          BITMAP                  "res\\properties.bmp"
+
+IDB_PROPERTIES_HC       BITMAP                  "res\\properties_hc.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_MAINFRAME_256 TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_PROPERTIES TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_EXPAND_ALL
+    BUTTON      ID_SORTPROPERTIES
+    BUTTON      ID_PROPERTIES1
+    BUTTON      ID_PROPERTIES2
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "S&plit",                      ID_WINDOW_SPLIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About PFCal...",             ID_APP_ABOUT
+    END
+END
+
+IDR_PFCalTYPE MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "S&plit",                      ID_WINDOW_SPLIT
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About PFCal...",             ID_APP_ABOUT
+    END
+END
+
+IDR_POPUP_EDIT MENU
+BEGIN
+    POPUP "Edit"
+    BEGIN
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+END
+
+IDR_WINDOWS_MENU MENU
+BEGIN
+    MENUITEM "&New Window",                 ID_WINDOW_NEW
+END
+
+IDR_OUTPUT_POPUP MENU
+BEGIN
+    POPUP "Popup"
+    BEGIN
+        MENUITEM "&Copy",                       ID_EDIT_COPY
+        MENUITEM "&Clear",                      ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Hide",                       ID_VIEW_OUTPUTWND
+    END
+END
+
+IDR_HELP_MENU MENU
+BEGIN
+    MENUITEM "&About PFCal...",             ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 178, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About PFCal"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "PFCal, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Zhao Jialiang, Shi Jiahui, Zhang Chenxi, Samina",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,121,41,50,14,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "PFCal"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "PFCal.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "PFCal.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 171
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Ribbon
+//
+
+IDR_RIBBON              RT_RIBBON_XML           "res\\ribbon.mfcribbon-ms"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "PFCal"
+    IDR_PFCalTYPE           "\nPFCal\nPFCal\n\n\nPFCal.Document\nPFCal.Document"
+    ID_WINDOW_MANAGER       "&Windows..."
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "PFCal"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle Status Bar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STATUS_PANE1        "Pane 1"
+    IDS_STATUS_PANE2        "Pane 2"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_OUTPUT_WND          "Output"
+    IDS_PROPERTIES_WND      "Properties"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_BUILD_TAB           "Build"
+    IDS_DEBUG_TAB           "Debug"
+    IDS_FIND_TAB            "Find"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_EDIT_MENU           "Edit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_TOOLS_LINE           "Add transmission lines or transformers."
+END
+
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#include "res\PFCal.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"      // Standard components
+#if !defined(_AFXDLL)
+#include "afxprint.rc"        // printing/print preview resources
+#include "afxribbon.rc"        // MFC ribbon and control bar resources
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
